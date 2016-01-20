@@ -2,6 +2,8 @@
 
 It's a Object Calendar made with jquery library. Based on variable, it changes the value everytime you select a date.
 
+![calendar](https://cloud.githubusercontent.com/assets/16780506/12447084/26f05fce-bf6e-11e5-8234-6db53bc43985.PNG)
+
 Usage:
 
 1- put the project into the directory Documents/Qlik/Sense/Extensions
