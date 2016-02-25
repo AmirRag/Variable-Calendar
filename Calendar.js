@@ -1,4 +1,4 @@
-define( ["qlik",  "jquery", "css!./jquery-ui.css"],
+define( ["qlik",  "jquery", "css!./datepicker.css"],
 function (qlik) {
 	return {
 		initialProperties : {
@@ -38,7 +38,7 @@ function (qlik) {
 	  
 		paint : function($element, layout) {
 			var html = "", t = this;
-			html += '<input type="button" style="width:105px; height:40px; border-radius: 25px; background-color:#eaeae1; font-weight:bold;" id="datepicker"  value="' +  layout.variableValue + '" >';
+			html += '<input type="button" class="CalendarButton" id="datepicker"  value="' +  layout.variableValue + '" >';
 			$element.html(html).find('button').on('qv-activate', function() {
 				var val = $(this).data('alt') + '';
 				qlik.currApp(t).variable.setContent(layout.variableName, val);
@@ -55,3 +55,4 @@ function (qlik) {
 		}
 	};
 });
+
